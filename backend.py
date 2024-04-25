@@ -119,7 +119,10 @@ def get_latex(filename):
                 (x0, x1, x1, x2, x1, x2, x2, x3, y0, y1, y1, y2, y1, y2, y2, y3))
             start = segment.end_point
     print('-----------------------------')
-    print(coordinates)
+    # print(coordinates)
+    with open('coordinates.txt', 'w') as file:
+        for coord in coordinates:
+            file.writelines(coord + '\n')
     print('-----------------------------')
     return latex
 
