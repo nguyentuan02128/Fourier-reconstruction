@@ -1,7 +1,7 @@
 import gurobipy as gp
 from gurobipy import GRB
 
-with open('coordinates.txt', 'r') as file:
+with open('dataFolder\\coordinates.txt', 'r') as file:
     lines = file.readlines() 
 
 def getCoordinatesList(line: list[str]) -> list[float]:
